@@ -16,13 +16,13 @@ describe('Card styled components', () => {
     const wrapper = mount(<Wrapper />);
 
     wrapper.setProps({ layout: 'list', index: 3});
-    expect(wrapper).toHaveStyleRule('margin-top','30px');
+    expect(wrapper).toHaveStyleRule('margin-left','30px');
     expect(wrapper).toHaveStyleRule('width', '780px');
     expect(wrapper).toHaveStyleRule('min-width', '780px');
     expect(wrapper).toHaveStyleRule('max-width', '780px');
 
     wrapper.setProps({ layout: 'grid', index: 0});
-    expect(wrapper).toHaveStyleRule('margin-top','0px');
+    expect(wrapper).toHaveStyleRule('margin-left','0px');
     expect(wrapper).toHaveStyleRule('width', '315px');
     expect(wrapper).toHaveStyleRule('min-width', '315px');
     expect(wrapper).toHaveStyleRule('max-width', '315px');
