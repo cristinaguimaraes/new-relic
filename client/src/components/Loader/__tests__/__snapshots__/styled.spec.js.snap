@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loader styled components Spinner should render properly 1`] = `ShallowWrapper {}`;
+
+exports[`Loader styled components Wrapper should render properly 1`] = `ShallowWrapper {}`;

@@ -1,21 +1,18 @@
 import React from 'react';
 import { func, oneOf } from 'prop-types';
-import {Title, Subtitle, SubTitle, Wrapper, Icon} from './styled';
+import {Title, Wrapper, Icon, Text} from './styled';
 
- const Header = ({onClick, layout}) => {
-
-
-    return (
+ const Header = ({onClick, layout}) =>  (
         <Wrapper>
             <Title>Apps by Host</Title>
-            <SubTitle>for user averylongemailaddress@companyname.com</SubTitle>
+            <Text>for user averylongemailaddress@companyname.com</Text>
             <Icon className={'material-icons'}  onClick={onClick}>
                 check_box_outline_blank
             </Icon>
-            <SubTitle>Show as {layout}</SubTitle>
+            <Text>Show as {layout}</Text>
         </Wrapper>
-    )
-};
+    );
+
 
 Header.propTypes = {
     onClick: func.isRequired,

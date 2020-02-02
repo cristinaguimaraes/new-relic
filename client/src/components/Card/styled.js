@@ -14,12 +14,14 @@ display: flex;
 
 export const Wrapper = styled.div`
 display:flex;
-  width: calc(${props => 100 / 12} * 100%);
-max-width: ${props => (props.layout === 'grid' ? '315px' : 'null')};
+width:${props => (props.layout === 'grid' ? '315px' : '780px')};
+min-width: ${props => (props.layout === 'grid' ? '315px' : '780px')};
+max-width: ${props => (props.layout === 'grid' ? '315px' : '780px')};
 padding: 30px;
 flex-direction: column;
 background-color: white;
-margin-top: 30px
+margin-top: 30px;
+margin-left: ${props => ((props.layout === 'grid' && props.index % 2) ? '30px' : '0px')};
 `;
 
 export const Apdex = styled.div`
@@ -28,7 +30,7 @@ opacity: 62%;
 font-size: 13px;
 font-family: 'Helvetica Bold';
 line-height: 19px;
-width: 22px;
+min-width: 22px;
 `;
 
 export const Name = styled.div`

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header styled components Icon should render properly 1`] = `ShallowWrapper {}`;
+
+exports[`Header styled components SubTitle should render properly 1`] = `ShallowWrapper {}`;
+
+exports[`Header styled components Title should render properly 1`] = `ShallowWrapper {}`;
+
+exports[`Header styled components Wrapper should render properly 1`] = `ShallowWrapper {}`;
