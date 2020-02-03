@@ -14,9 +14,13 @@ const Card = ({host, apps, layout, index}) =>  (
   </Wrapper>
 );
 
+Card.defaultProps = {
+    layout: 'list'
+};
+
 Card.propTypes = {
     host: string.isRequired,
-    layout: oneOf(['list', 'grid']).isRequired,
+    layout: oneOf(['list', 'grid']),
     apps: arrayOf(shape({apdex: number.isRequired, name: string.isRequired})).isRequired,
     index: number
 };

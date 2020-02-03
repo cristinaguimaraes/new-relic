@@ -1,22 +1,22 @@
 import React, {  useState } from 'react';
-import {Header} from '../../components/Header';
 import {Card} from '../../components/Card';
 import {Content,  Cards} from './styled';
 import { arrayOf, number, shape, string } from 'prop-types';
+import {AppsByHostHeader} from "../../components/AppsByHostHeader";
 
-const AppsByHost = ({location}) => {
+const AppsByHost = ({data}) => {
 
     const [layout, setLayout] = useState('list');
     
     const handleOnChangeLayoutClick = () => {
         setLayout(prevState => prevState === 'list' ? 'grid' : 'list')
     };
-
+console.log(data)
     return (
         <Content>
-            <Header onClick={handleOnChangeLayoutClick} layout={layout}/>
+            <AppsByHostHeader onClick={handleOnChangeLayoutClick} layout={layout}/>
             <Cards>
-                {Object.entries(location.state.hostsWithApps).map(([host, apps], index) => (
+                {Object.entries(data).map(([host, apps], index) => (
                         <Card key={`host-${host}`} index={index} layout={layout} host={host} apps={apps.slice(0, 5)}/>
                     ))
                 }

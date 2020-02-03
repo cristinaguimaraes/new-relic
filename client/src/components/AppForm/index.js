@@ -1,1 +1,2 @@
-export { AppForm } from './AppForm';
+import { AppFormContainer } from './AppFormContainer';
+export { AppFormContainer as AppForm };

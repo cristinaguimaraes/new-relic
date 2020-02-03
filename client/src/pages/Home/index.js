@@ -1,1 +1,4 @@
-export { Home } from './Home';
+import { HomeContainer } from './HomeContainer';
+export { HomeContainer as Home };
+
+

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppsByHostHeader styled components Icon should render properly 1`] = `ShallowWrapper {}`;
+
+exports[`AppsByHostHeader styled components SubTitle should render properly 1`] = `ShallowWrapper {}`;
+
+exports[`AppsByHostHeader styled components Title should render properly 1`] = `ShallowWrapper {}`;
+
+exports[`AppsByHostHeader styled components Wrapper should render properly 1`] = `ShallowWrapper {}`;
