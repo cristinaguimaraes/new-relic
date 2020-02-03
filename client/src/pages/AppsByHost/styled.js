@@ -9,4 +9,10 @@ flex-direction: column;
 background-color: #F8F8F8
 `;
 
+export const Cards= styled.div`
+display:flex;
+flex-wrap: wrap;
+width: 840px;
+`;
+
 

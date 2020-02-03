@@ -1,5 +1,5 @@
 import React from 'react';
-import {Home} from './pages/Home';
+import {Routes} from "./components/Routes";
 import {GlobalStyles} from './styles/global';
 import {DefaultErrorBoundary} from "./components/DefaultErrorBoundary";
 import {App} from './App.styled';
@@ -10,7 +10,7 @@ function app() {
       <App>
           <DefaultErrorBoundary>
               <GlobalStyles />
-                <Home/>
+                <Routes/>
           </DefaultErrorBoundary>
       </App>
 

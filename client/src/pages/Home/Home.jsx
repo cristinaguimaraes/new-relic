@@ -1,12 +1,10 @@
 import React, {  useState, useEffect } from 'react';
-import {Header} from '../../components/Header';
-import {Card} from '../../components/Card';
-import {Content,  Cards} from './styled';
+import {Content} from './styled';
 import  {getData} from '../../api';
 import {Loader} from "../../components/Loader";
+import { Link } from 'react-router-dom';
 
 export const Home = () => {
-    const [layout, setLayout] = useState('list');
     const [isLoading, setLoading] = useState(false);
     const [error, setError] = useState();
     const [data, setData] = useState();
@@ -45,8 +43,9 @@ export const Home = () => {
     }, new Set())];
 
     const dataSortedByApdex = data.sort((a, b) => b.apdex - a.apdex);
+    
     const hostsWithApps = hosts.reduce((acc, eachHost) => {
-        acc[eachHost] = dataSortedByApdex.filter(app => app.host.includes(eachHost))
+        acc[eachHost] = dataSortedByApdex.filter(app => app.host.includes(eachHost));
         return acc
     }, {});
 
@@ -64,20 +63,13 @@ export const Home = () => {
     };
 
     console.log(hostsWithApps, data.length);
-
-    const handleOnChangeLayoutClick = () => {
-        setLayout(prevState => prevState === 'list' ? 'grid' : 'list')
-    };
+    
 
     return (
         <Content>
-            <Header onClick={handleOnChangeLayoutClick} layout={layout}/>
-            <Cards>
-                {Object.entries(hostsWithApps).map(([host, apps], index) => (
-                        <Card key={`host-${host}`} index={index} layout={layout} host={host} apps={apps.slice(0, 5)}/>
-                    ))
-                }
-            </Cards>
+       
+            <Link  to={{ pathname: '/AppsByHost', state: {hostsWithApps} }} >AppsByHost</Link>
+         
 
             <button style={{width: '80px', marginTop: '15px'}} onClick={() => addAppToHosts({
                 app: {
@@ -87,10 +79,10 @@ export const Home = () => {
                     apdex: 100,
                     host: ['e7bf58af-f0be.dallas.biz']
                 }
-            })}>Add
-            </button>
+            })}>Add</button>
 
             <button style={{width: '80px', marginTop: '15px'}} onClick={() => removeAppFromHosts({app: "Test"})}>Remove</button>
+            
         </Content>
     )
 }
