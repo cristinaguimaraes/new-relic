@@ -3,6 +3,7 @@ import {Content} from './styled';
 import  {getData} from '../../api';
 import {Loader} from "../../components/Loader";
 import { Link } from 'react-router-dom';
+import { AppForm } from '../../components/AppForm';
 
 export const Home = () => {
     const [isLoading, setLoading] = useState(false);
@@ -54,6 +55,7 @@ export const Home = () => {
     };
 
     const addAppToHosts = ({app}) => {
+        console.log( app)
         setData([...data, app])
     };
 
@@ -69,17 +71,7 @@ export const Home = () => {
         <Content>
        
             <Link  to={{ pathname: '/AppsByHost', state: {hostsWithApps} }} >AppsByHost</Link>
-         
-
-            <button style={{width: '80px', marginTop: '15px'}} onClick={() => addAppToHosts({
-                app: {
-                    name: "Test",
-                    contributors: ["testing"],
-                    version: 7,
-                    apdex: 100,
-                    host: ['e7bf58af-f0be.dallas.biz']
-                }
-            })}>Add</button>
+            <AppForm addAppToHosts={addAppToHosts}/>
 
             <button style={{width: '80px', marginTop: '15px'}} onClick={() => removeAppFromHosts({app: "Test"})}>Remove</button>
             
