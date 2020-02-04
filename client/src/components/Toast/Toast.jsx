@@ -6,7 +6,6 @@ import './toast.css';
 
 
 import { TextWrapper, Text} from './styled';
-import { Icon } from '../AppsByHostHeader/styled';
 
 const Fade = cssTransition({
   enter: 'custom-fadeInDown',
@@ -15,7 +14,6 @@ const Fade = cssTransition({
 });
 
 const Toast = ({ showToast, messageKey, onClose  }) => {
-
   useEffect(() => {
     if (showToast) {
       toast(<Message />, {
@@ -28,17 +26,9 @@ const Toast = ({ showToast, messageKey, onClose  }) => {
   
   
   const Message = () => (
-  
-          <TextWrapper>
-            <Icon className={'material-icons'} >
-              'check_circle'
-            </Icon>
-            <Text>{messageKey}</Text>
-            <Icon className={'material-icons'} onClick={onClose}>
-              'close'
-            </Icon>
-          </TextWrapper>
-  
+      <TextWrapper>
+        <Text>{messageKey}</Text>
+      </TextWrapper>
   );
 
   return (
@@ -46,7 +36,7 @@ const Toast = ({ showToast, messageKey, onClose  }) => {
       containerId={'custom-toast-container'}
       autoClose={2500}
       draggable
-      position={toast.POSITION.TOP_CENTER}
+      position={toast.POSITION.TOP_RIGHT}
       closeButton={false}
       newestOnTop
       closeOnClick

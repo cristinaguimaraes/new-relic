@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const useRequest = (fn, params) => {
+const useRequest = (fn) => {
   const [isLoading, setLoading] = useState(true);
   const [error, setError] = useState();
   const [data, setData] = useState();
@@ -24,7 +24,7 @@ const useRequest = (fn, params) => {
     }
 
     return () => (isSubscribed = false);
-  }, [params]);
+  }, [fn]);
 
   return { isLoading, error, data };
 };

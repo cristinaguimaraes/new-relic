@@ -2,9 +2,12 @@ import React from 'react';
 import {Card} from '../../components/Card';
 import {Content, Header} from './styled';
 import { arrayOf, number, shape, string } from 'prop-types';
+import {Redirect} from "react-router-dom";
 
-const TopApps = ({data}) => {
+const TopAppsByHost = ({data}) => {
 const [,,id] = window.location.pathname.split('/');
+
+    if (Object.keys(data).length === 0) return <Redirect to="/" />;
 
     return (
         <Content>
@@ -14,8 +17,8 @@ const [,,id] = window.location.pathname.split('/');
     )
 };
 
-TopApps.propTypes = {
+TopAppsByHost.propTypes = {
     location: shape({pathname: string, state:shape({hostsWithApps:arrayOf(shape({apdex: number.isRequired, name: string.isRequired})).isRequired})}).isRequired,
 };
 
-export { TopApps };
+export { TopAppsByHost };

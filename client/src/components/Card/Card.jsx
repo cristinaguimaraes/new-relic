@@ -7,7 +7,7 @@ const Card = ({host, apps, layout, index, onShowToastMessage}) =>   (
       <Wrapper layout={layout} index={index}>
           <Host>  {host} </Host>
           {apps.map((app, index) => (
-            <App key={index} onClick={() => onShowToastMessage({messageKey: app.name})}>
+            <App key={index} onClick={() => onShowToastMessage({messageKey: `Release number ${app.version}`})}>
                 <Apdex> {app.apdex} </Apdex>
                 <Name> {app.name}</Name>
             </App>

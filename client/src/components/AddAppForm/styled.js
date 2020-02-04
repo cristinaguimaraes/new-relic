@@ -19,6 +19,7 @@ min-height: 48px;
 
 export const Label = styled.label`
 font-family: 'Helvetica Bold';
+margin-top: 15px;
 margin-bottom: 5px;
   &:first-letter {
     text-transform: capitalize;
@@ -36,8 +37,25 @@ export const Form = styled.form`
 
 `;
 
+export const ButtonWrapper = styled.div`
+width: 100%;
+display:flex;
+justify-content:center
+`;
+
 export const Button = styled.button`
 width: 80px;
-margin-top: 15px
+margin-top: 15px;
+border-radius: 6px;
+height: 40px;
+`;
+
+export const Title = styled.div`
+font-size: 35px;
+font-family: 'Helvetica Bold';
+color: #000000;
+line-height: 43px;
+margin-bottom: 15px;
+text-align: center
 `;
 

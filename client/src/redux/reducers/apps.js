@@ -15,6 +15,8 @@ export function apps(state = initialState, action) {
             const appIndex = state.data.findIndex(eachApp => eachApp.name === action.payload.app);
             if (appIndex !== -1) {
                 return([...state.data.slice(0, appIndex), ...state.data.slice(appIndex + 1, apps.length)])
+            } else {
+                return state;
             }
         default:
             return state;
@@ -31,7 +33,6 @@ export function apps(state = initialState, action) {
      }, new Set())];
 
      const dataSortedByApdex = state.data.sort((a, b) => b.apdex - a.apdex);
-console.log(state, hosts, dataSortedByApdex)
      return hosts.reduce((acc, eachHost) => {
          acc[eachHost] = dataSortedByApdex.filter(app => app.host.includes(eachHost));
          return acc

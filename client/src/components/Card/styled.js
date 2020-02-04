@@ -10,6 +10,10 @@ margin-bottom: 23px;
 
 export const App = styled.div`
 display: flex;
+  :hover {
+      cursor: pointer;
+    };
+ font-family: 'Helvetica Bold';
 `;
 
 export const Wrapper = styled.div`

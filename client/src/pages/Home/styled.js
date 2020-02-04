@@ -7,9 +7,13 @@ display:flex;
 justify-content: center;
 padding: 30px;
 flex-direction: column;
-background-color: #F8F8F8
+background-color: #F8F8F8;
+align-items: center
 `;
 
 export const Link = styled(ReactLink)`
-font-family: 'Helvetica';
+font-size: 35px;
+font-family: 'Helvetica Bold';
+color: #000000;
+line-height: 43px;
 `
