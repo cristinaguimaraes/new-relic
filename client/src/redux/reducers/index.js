@@ -1,8 +1,9 @@
 import { combineReducers } from 'redux';
 import {apps} from "./apps";
+import { toast } from 'react-toastify';
 
 const reducers = combineReducers({
-apps
+apps, toast,
 });
 
 export { reducers };

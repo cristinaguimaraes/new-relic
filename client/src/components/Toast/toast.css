@@ -1,0 +1,64 @@
+.custom-background {
+  background-color: transparent;
+  box-shadow: none;
+  height: 100px;
+  padding: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .custom-background {
+    width: 100vw;
+    left: 0;
+    margin: 0;
+    height: 100px;
+  }
+}
+
+.Toastify__toast-container {
+  padding: 0;
+}
+
+.Toastify__toast-container--top-center {
+  top: 96px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100vw;
+  left: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .Toastify__toast-container--top-center {
+    top: 45px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.custom-fadeInDown {
+  animation-name: fadeInDown;
+}
+
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.custom-fadeOutUp {
+  animation-name: fadeOutUp;
+}
