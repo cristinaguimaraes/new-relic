@@ -21,7 +21,7 @@ const RemoveAppForm  =({onDeleteApp, onShowToastMessage}) => {
 };
 
     const handleOnChange = (event) => {
-        setName( event.target.value);
+        setName(event.target.value);
         setError( '')
     };
 
@@ -32,7 +32,7 @@ const RemoveAppForm  =({onDeleteApp, onShowToastMessage}) => {
           <Input name='name' type='text' value={name} onChange={handleOnChange}/>
           {error && <Helper>{error}</Helper>}
           <ButtonWrapper>
-            <Button  type="submit" >Remove</Button>
+              <Button  type="submit" >Remove</Button>
           </ButtonWrapper>
         </Form>
     )

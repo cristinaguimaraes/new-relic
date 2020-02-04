@@ -16,9 +16,3 @@ export const TextWrapper = styled.div`
 export const Text = styled.span`
   margin-left: 8px
 `;
-
-export const IconWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-`;

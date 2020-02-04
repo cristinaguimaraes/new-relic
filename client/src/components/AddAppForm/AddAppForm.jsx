@@ -19,7 +19,6 @@ const AddAppForm  =({onAddApp, onShowToastMessage}) => {
   });
 
   const handleOnChange = (event) => {
-    console.log(event.target.value, event.target.name)
     const value = (event.target.name === 'contributors' || event.target.name === 'host') ? event.target.value.split(',') : event.target.value;
     setApp({...app, [event.target.name]: value});
     setErrors({...errors, [event.target.name]: ''})

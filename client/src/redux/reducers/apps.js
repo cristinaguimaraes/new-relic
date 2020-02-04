@@ -12,9 +12,10 @@ export function apps(state = initialState, action) {
             const newApp = action.payload.app;
             return{data: [...state.data, newApp]};
         case DELETE_APP:
-            const appIndex = state.data.findIndex(eachApp => eachApp.name === action.payload.app);
+            console.log(action.payload)
+            const appIndex = state.data.findIndex(eachApp => eachApp.name === action.payload.name);
             if (appIndex !== -1) {
-                return([...state.data.slice(0, appIndex), ...state.data.slice(appIndex + 1, apps.length)])
+                return{data: [...state.data.slice(0, appIndex), ...state.data.slice(appIndex + 1, state.data.length)]}
             } else {
                 return state;
             }
@@ -25,6 +26,7 @@ export function apps(state = initialState, action) {
 
 
  export const hostsWithApps = state => {
+    if (state.data.length === 0 ) return {};
      const hosts = [...state.data.reduce((acc, each) => {
          each.host.forEach(eachHost => {
              acc.add(eachHost)

@@ -3,8 +3,6 @@ import { bool, func, string } from 'prop-types';
 import { cssTransition, toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './toast.css';
-
-
 import { TextWrapper, Text} from './styled';
 
 const Fade = cssTransition({

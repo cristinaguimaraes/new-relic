@@ -16,4 +16,9 @@ color: #000000;
 line-height: 43px ;
 `;
 
+export const Text = styled.div`
+font-family: 'Helvetica Bold';
+font-size: 25px;
+margin-top: 15px;
+`;
 

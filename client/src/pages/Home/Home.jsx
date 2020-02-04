@@ -2,17 +2,17 @@ import React, {  useEffect } from 'react';
 import {Content, Link} from './styled';
 import {Loader} from "../../components/Loader";
 import { AddAppForm } from '../../components/AddAppForm';
-import { func} from "prop-types";
+import {func,  bool} from "prop-types";
 import { useRequest } from '../../hooks/useRequest';
 import {getData} from "../../api";
-import {RemoveAppForm} from '../../components/RemoveAppForm';
 import {TopAppsByHostForm} from "../../components/TopAppsByHostForm";
+import {RemoveAppForm} from "../../components/RemoveAppForm";
 
- const Home = ({onSaveInitialData}) => {
+ const Home = ({onSaveInitialData, hasInitialData}) => {
      const { data, isLoading, error } = useRequest(getData);
 
     useEffect(() => {
-       if(data) onSaveInitialData({data})
+       if(!hasInitialData) onSaveInitialData({data})
     }, [data]);
 
      if (isLoading || !data) {
@@ -25,16 +25,17 @@ import {TopAppsByHostForm} from "../../components/TopAppsByHostForm";
 
     return (
         <Content>
-            <Link  to={{ pathname: '/AppsByHost'}} >See List of Apps By Host</Link>
+            <Link  to={'/AppsByHost'} >See List of Apps By Host</Link>
             <TopAppsByHostForm/>
-            <AddAppForm addAppToHosts/>
-            <RemoveAppForm/>
+            <AddAppForm />
+         <RemoveAppForm/>
         </Content>
     )
-};
+ };
 
 Home.propTypes = {
     onSaveInitialData: func.isRequired,
+    hasInitialData: bool.isRequired
 };
 
 export { Home};

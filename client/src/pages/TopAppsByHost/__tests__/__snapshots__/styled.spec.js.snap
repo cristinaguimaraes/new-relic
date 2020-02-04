@@ -1,5 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home styled components Cards should render properly 1`] = `ShallowWrapper {}`;
-
 exports[`Home styled components Content should render properly 1`] = `ShallowWrapper {}`;
+
+exports[`Home styled components Header should render properly 1`] = `ShallowWrapper {}`;

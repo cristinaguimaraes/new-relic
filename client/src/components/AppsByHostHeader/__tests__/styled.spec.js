@@ -3,7 +3,7 @@ import { shallow} from 'enzyme';
 
 import { Title, Text, Wrapper, Icon} from '../styled';
 
-describe('AppsByHostHeader2 styled components', () => {
+describe('AppsByHostHeader styled components', () => {
   test('Title should render properly', () => {
     expect(shallow(<Title />)).toMatchSnapshot();
   });

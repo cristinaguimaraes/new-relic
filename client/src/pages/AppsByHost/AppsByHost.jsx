@@ -9,7 +9,7 @@ const AppsByHost = ({data}) => {
 
     const [layout, setLayout] = useState('list');
 
-    if (Object.keys(data).length === 0) return <Redirect to="/" />;
+    if (!data || Object.keys(data).length === 0) return <Redirect to="/" />;
     
     const handleOnChangeLayoutClick = () => {
         setLayout(prevState => prevState === 'list' ? 'grid' : 'list')
@@ -30,7 +30,8 @@ const AppsByHost = ({data}) => {
 };
 
 AppsByHost.propTypes = {
-    location: shape({state:shape({hostsWithApps:arrayOf(shape({apdex: number.isRequired, name: string.isRequired})).isRequired})}).isRequired,
+    data: shape({string: arrayOf(shape({host:arrayOf(string).isRequired, name: string.isRequired, apdex: number.isRequired, version: number.isRequired}))})
+
 };
 
 export { AppsByHost };
