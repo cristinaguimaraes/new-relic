@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import {
   Helper,
   Input,
@@ -8,10 +8,10 @@ import {
   ButtonWrapper,
   Title
 } from "./styled";
-import { func } from "prop-types";
+import {func, string, shape, arrayOf} from "prop-types";
 
-const RemoveAppForm = ({ onDeleteApp, onShowToastMessage }) => {
-  const [name, setName] = useState();
+const RemoveAppForm = ({onDeleteApp, onShowToastMessage, data}) => {
+  const [name, setName] = useState('');
   const [error, setError] = useState();
 
   const handleOnSubmit = event => {
@@ -20,8 +20,14 @@ const RemoveAppForm = ({ onDeleteApp, onShowToastMessage }) => {
     if (!name) {
       setError("Please add the name");
     } else {
-      onDeleteApp({ name });
-      onShowToastMessage({ messageKey: "App successfully deleted" });
+      const appIndex = data.findIndex(eachApp => eachApp.name === name);
+      if (appIndex !== -1) {
+        onDeleteApp({appIndex});
+        //If 'onDeleteApp' was dispatching an action calling the API, the toast should appear just in case of Success. It is here because of the scope of the project.
+        onShowToastMessage({messageKey: "App successfully deleted", type: 'success'});
+      } else {
+        onShowToastMessage({messageKey: "App's name doesn't exist", type: 'failure'});
+      }
       setName("");
     }
   };
@@ -35,7 +41,7 @@ const RemoveAppForm = ({ onDeleteApp, onShowToastMessage }) => {
     <Form onSubmit={handleOnSubmit}>
       <Title>Remove App</Title>
       <Label>App Name:</Label>
-      <Input name="name" type="text" value={name} onChange={handleOnChange} />
+      <Input name="name" type="text" value={name} onChange={handleOnChange}/>
       {error && <Helper>{error}</Helper>}
       <ButtonWrapper>
         <Button type="submit">Remove</Button>
@@ -46,7 +52,8 @@ const RemoveAppForm = ({ onDeleteApp, onShowToastMessage }) => {
 
 RemoveAppForm.propTypes = {
   onDeleteApp: func.isRequired,
-  onShowToastMessage: func.isRequired
+  onShowToastMessage: func.isRequired,
+  data: arrayOf(shape({name: string}))
 };
 
-export { RemoveAppForm };
+export {RemoveAppForm};

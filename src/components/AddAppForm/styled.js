@@ -13,8 +13,10 @@ export const Helper = styled.span`
 
 export const Input = styled.input`
   font-family: "Helvetica";
-  height: 48px;
-  min-height: 48px;
+  height: 20px;
+  min-height: 20px;
+  font-size: 16px;
+  padding: 10px;
 `;
 
 export const Label = styled.label`
@@ -47,6 +49,8 @@ export const Button = styled.button`
   margin-top: 15px;
   border-radius: 6px;
   height: 40px;
+  font-size: 16px;
+  font-family : inherit;
 `;
 
 export const Title = styled.div`

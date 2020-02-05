@@ -2,6 +2,11 @@ import { RemoveAppForm } from "./RemoveAppForm";
 import { onDeleteApp, onShowToastMessage } from "../../redux/actions/creators";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
+import {hostsWithApps} from "../../redux/reducers/apps";
+
+const mapStateToProps = state => ({
+  data: state.apps.data
+});
 
 const mapDispatchToProps = {
   onDeleteApp,
@@ -9,5 +14,5 @@ const mapDispatchToProps = {
 };
 
 export const RemoveAppFormContainer = withRouter(
-  connect(null, mapDispatchToProps)(RemoveAppForm)
+  connect(mapStateToProps, mapDispatchToProps)(RemoveAppForm)
 );

@@ -9,6 +9,7 @@ export const Content = styled.div`
   flex-direction: column;
   background-color: #f8f8f8;
   align-items: center;
+  font-family: 'Helvetica';
 `;
 
 export const Link = styled(ReactLink)`

@@ -11,25 +11,17 @@ export const initialState = {
 export function apps(state = initialState, action) {
   switch (action.type) {
     case SAVE_INITIAL_DATA:
-      return { data: action.payload.data };
+      return {data: action.payload.data};
     case ADD_APP:
       const newApp = action.payload.app;
-      return { data: [...state.data, newApp] };
+      return {data: [...state.data, newApp]};
     case DELETE_APP:
-      console.log(action.payload);
-      const appIndex = state.data.findIndex(
-        eachApp => eachApp.name === action.payload.name
-      );
-      if (appIndex !== -1) {
-        return {
-          data: [
-            ...state.data.slice(0, appIndex),
-            ...state.data.slice(appIndex + 1, state.data.length)
-          ]
-        };
-      } else {
-        return state;
-      }
+      return {
+        data: [
+          ...state.data.slice(0, action.payload.appIndex),
+          ...state.data.slice(action.payload.appIndex + 1, state.data.length)
+        ]
+      };
     default:
       return state;
   }

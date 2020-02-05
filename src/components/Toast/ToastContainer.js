@@ -4,7 +4,8 @@ import { onHideToastMessage } from "redux/actions/creators";
 
 const mapStateToProps = state => ({
   showToast: state.toast.show,
-  messageKey: state.toast.messageKey
+  messageKey: state.toast.messageKey,
+  type: state.toast.type
 });
 
 const mapDispatchToProps = {

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import {
   Helper,
   Input,
@@ -8,9 +8,9 @@ import {
   ButtonWrapper,
   Title
 } from "./styled";
-import { func } from "prop-types";
+import {func} from "prop-types";
 
-const AddAppForm = ({ onAddApp, onShowToastMessage }) => {
+const AddAppForm = ({onAddApp, onShowToastMessage}) => {
   const [app, setApp] = useState({
     name: "",
     contributors: [],
@@ -31,8 +31,8 @@ const AddAppForm = ({ onAddApp, onShowToastMessage }) => {
       event.target.name === "contributors" || event.target.name === "host"
         ? event.target.value.split(",")
         : event.target.value;
-    setApp({ ...app, [event.target.name]: value });
-    setErrors({ ...errors, [event.target.name]: "" });
+    setApp({...app, [event.target.name]: value});
+    setErrors({...errors, [event.target.name]: ""});
   };
 
   const handleOnSubmit = event => {
@@ -55,8 +55,9 @@ const AddAppForm = ({ onAddApp, onShowToastMessage }) => {
     }
 
     if (Object.keys(errors).length === 0) {
-      onAddApp({ app });
-      onShowToastMessage({ messageKey: "App successfully added to host" });
+      onAddApp({app});
+      //If 'onAddApp' was dispatching an action calling the API, the toast should appear just in case of Success. It is here because of the scope of the project.
+      onShowToastMessage({messageKey: "App successfully added to host", type: 'success'});
       setApp({
         name: "",
         contributors: [],
@@ -86,6 +87,7 @@ const AddAppForm = ({ onAddApp, onShowToastMessage }) => {
         type="text"
         value={app.contributors.toString() || ""}
         onChange={handleOnChange}
+        placeholder={`Write the contributor's names separate by comma`}
       />
       {errors.contributors && <Helper>{errors.contributors}</Helper>}
       <Label>Apdex:</Label>
@@ -104,12 +106,13 @@ const AddAppForm = ({ onAddApp, onShowToastMessage }) => {
         onChange={handleOnChange}
       />
       {errors.version && <Helper>{errors.version}</Helper>}
-      <Label>Host:</Label>
+      <Label>Hosts:</Label>
       <Input
         name="host"
         type="text"
         value={app.host.toString() || ""}
         onChange={handleOnChange}
+        placeholder={`Write the host's names separate by comma`}
       />
       {errors.host && <Helper>{errors.host}</Helper>}
       <ButtonWrapper>
@@ -124,4 +127,4 @@ AddAppForm.propTypes = {
   onShowToastMessage: func.isRequired
 };
 
-export { AddAppForm };
+export {AddAppForm};

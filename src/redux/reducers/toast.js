@@ -5,13 +5,14 @@ import {
 
 export const initialState = {
   show: false,
-  messageKey: null
+  messageKey: null,
+  type: null
 };
 
 export const toast = (state = initialState, action) => {
   switch (action.type) {
     case SHOW_TOAST_MESSAGE:
-      return { show: true, messageKey: action.payload.messageKey };
+      return { show: true, messageKey: action.payload.messageKey, type: action.payload.type};
     case HIDE_TOAST_MESSAGE:
       return initialState;
     default:

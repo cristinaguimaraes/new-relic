@@ -1,22 +1,22 @@
-import React, { useEffect } from "react";
-import { Content, Link } from "./styled";
-import { Loader } from "components/Loader";
-import { AddAppForm } from "components/AddAppForm";
-import { func, bool } from "prop-types";
-import { useRequest } from "hooks/useRequest";
-import { getData } from "api";
-import { TopAppsByHostForm } from "components/TopAppsByHostForm";
-import { RemoveAppForm } from "components/RemoveAppForm";
+import React, {useEffect} from "react";
+import {Content, Link} from "./styled";
+import {Loader} from "components/Loader";
+import {AddAppForm} from "components/AddAppForm";
+import {func, bool} from "prop-types";
+import {useRequest} from "hooks/useRequest";
+import {getData} from "api";
+import {TopAppsByHostForm} from "components/TopAppsByHostForm";
+import {RemoveAppForm} from "components/RemoveAppForm";
 
-const Home = ({ onSaveInitialData, hasInitialData }) => {
-  const { data, isLoading, error } = useRequest(getData);
+const Home = ({onSaveInitialData, hasInitialData}) => {
+  const {data, isLoading, error} = useRequest(getData);
 
   useEffect(() => {
-    if (!hasInitialData && data) onSaveInitialData({ data });
+    if (!hasInitialData && data) onSaveInitialData({data});
   }, [data]);
 
   if (isLoading || !data) {
-    return <Loader />;
+    return <Loader/>;
   }
 
   if (error) {
@@ -26,9 +26,9 @@ const Home = ({ onSaveInitialData, hasInitialData }) => {
   return (
     <Content>
       <Link to={"/AppsByHost"}>See List of Apps By Host</Link>
-      <TopAppsByHostForm />
-      <AddAppForm />
-      <RemoveAppForm />
+      <TopAppsByHostForm/>
+      <AddAppForm/>
+      <RemoveAppForm/>
     </Content>
   );
 };
@@ -38,4 +38,4 @@ Home.propTypes = {
   hasInitialData: bool.isRequired
 };
 
-export { Home };
+export {Home};

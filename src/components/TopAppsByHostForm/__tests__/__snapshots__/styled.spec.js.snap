@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppsByHostHeader2 styled components Button should render properly 1`] = `ShallowWrapper {}`;
+
+exports[`AppsByHostHeader2 styled components ButtonWrapper should render properly 1`] = `ShallowWrapper {}`;
+
+exports[`AppsByHostHeader2 styled components Form should render properly 1`] = `ShallowWrapper {}`;
+
+exports[`AppsByHostHeader2 styled components Helper should render properly 1`] = `ShallowWrapper {}`;
+
+exports[`AppsByHostHeader2 styled components Input should render properly 1`] = `ShallowWrapper {}`;
+
+exports[`AppsByHostHeader2 styled components Label should render properly 1`] = `ShallowWrapper {}`;
+
+exports[`AppsByHostHeader2 styled components Title should render properly 1`] = `ShallowWrapper {}`;
