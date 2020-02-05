@@ -93,7 +93,7 @@ const AddAppForm = ({onAddApp, onShowToastMessage}) => {
       <Label>Apdex:</Label>
       <Input
         name="apdex"
-        type="text"
+        type="number"
         value={app.apdex}
         onChange={handleOnChange}
       />
@@ -101,7 +101,7 @@ const AddAppForm = ({onAddApp, onShowToastMessage}) => {
       <Label>Version:</Label>
       <Input
         name="version"
-        type="text"
+        type="number"
         value={app.version}
         onChange={handleOnChange}
       />
