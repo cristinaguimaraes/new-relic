@@ -4,7 +4,7 @@
 
 ## Steps
   1. [Clone the repo](#1-clone-the-repo)
-  2. [ 2. Create the .env file]  (#2-create-the-env-file)
+  2. [Create the .env file]  (#2-create-the-env-file)
   3. [Run the project](#3-run-the-project)
   
 ## 1. Clone the Repo
