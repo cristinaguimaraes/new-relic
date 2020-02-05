@@ -13,7 +13,9 @@ Clone the `new-relic code` locally. In a terminal, run:
 
   `git clone https://github.com/cristinaguimaraes/new-relic.git`
   
-## 2. Create the .env file from .env.example
+## 2. Create the .env file 
+
+Create the .env file compying the .env.example file 
   
   
 ## 3. Run the project
