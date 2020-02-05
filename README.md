@@ -8,9 +8,9 @@
   
  ## 1. Clone the Repo
 
-Clone the `zl-assignment code` locally. In a terminal, run:
+Clone the `new-relic code` locally. In a terminal, run:
 
-  `git clone https://github.com/cristinaguimaraes/zl-assignment.git`
+  `git clone https://github.com/cristinaguimaraes/new-relic.git`
   
 
 ## 2. Run the project
