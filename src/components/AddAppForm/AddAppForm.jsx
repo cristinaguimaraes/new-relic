@@ -30,7 +30,7 @@ const AddAppForm = ({onAddApp, onShowToastMessage}) => {
     const value =
       event.target.name === "contributors" || event.target.name === "host"
         ? event.target.value.split(",")
-        : event.target.value;
+        : event.target.name === "apdex" || event.target.name === "version" ? Number(event.target.value) : event.target.value;
     setApp({...app, [event.target.name]: value});
     setErrors({...errors, [event.target.name]: ""});
   };
