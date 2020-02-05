@@ -6,7 +6,7 @@ describe("Toast component", () => {
   test("should render properly", () => {
     const fn = () => {};
     const wrapper = shallow(
-      <Toast showToast={false} onHideToast={fn} onClose={fn} />
+      <Toast showToast={false} onHideToast={fn} onClose={fn} type={null} />
     );
     expect(wrapper).toMatchSnapshot();
 
@@ -16,6 +16,7 @@ describe("Toast component", () => {
         showToast={true}
         onHideToast={fn}
         onClose={fn}
+        type={'success'}
       />
     );
     expect(wrapper1).toMatchSnapshot();

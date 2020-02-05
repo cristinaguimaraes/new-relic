@@ -9,7 +9,7 @@ export const TextWrapper = styled.div`
   padding: 16px;
   display: flex; 
   align-items: center;
-  background-color: ${props => (props.type === 'success' ? 'green' : 'red')};
+  background-color: ${props => (props.type === 'failure' ? 'red' : 'green')};
   color: white;
 `;
 

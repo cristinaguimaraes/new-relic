@@ -9,7 +9,7 @@ const Card = ({ host, apps, layout, index, onShowToastMessage }) => (
       <App
         key={i}
         onClick={() =>
-          onShowToastMessage({ messageKey: `Release number ${app.version}` })
+          onShowToastMessage({ messageKey: `Release number ${app.version}`, type:'success' })
         }
       >
         <Apdex> {app.apdex} </Apdex>
