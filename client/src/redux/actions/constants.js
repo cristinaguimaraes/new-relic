@@ -1,8 +1,0 @@
-export const SAVE_INITIAL_DATA = 'SAVE_INITIAL_DATA';
-
-export const ADD_APP = 'ADD_APP';
-
-export const DELETE_APP = 'DELETE_APP';
-
-export const SHOW_TOAST_MESSAGE = 'SHOW_TOAST_MESSAGE';
-export const HIDE_TOAST_MESSAGE = 'HIDE_TOAST_MESSAGE';
