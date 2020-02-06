@@ -87,7 +87,7 @@ const AddAppForm = ({onAddApp, onShowToastMessage}) => {
         type="text"
         value={app.contributors.toString() || ""}
         onChange={handleOnChange}
-        placeholder={`Write the contributor's names separate by comma`}
+        placeholder={`Write the contributors names separate by comma`}
       />
       {errors.contributors && <Helper>{errors.contributors}</Helper>}
       <Label>Apdex:</Label>
@@ -112,7 +112,7 @@ const AddAppForm = ({onAddApp, onShowToastMessage}) => {
         type="text"
         value={app.host.toString() || ""}
         onChange={handleOnChange}
-        placeholder={`Write the host's names separate by comma`}
+        placeholder={`Write the hosts names separate by comma`}
       />
       {errors.host && <Helper>{errors.host}</Helper>}
       <ButtonWrapper>
