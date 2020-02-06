@@ -26,6 +26,12 @@ npm install
 npm start
 ```
 
+# Running Tests
+
+```
+npm t
+```
+
 # Tech stack
 
 ### Built with
