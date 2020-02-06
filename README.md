@@ -60,20 +60,20 @@ setupTests.js: configuration file for the tests.
 
  4. My first approach was to not use Redux or Route, keeping all the information in just one url where the main component was holding the state. But after a while, I decided to also build the UI for the 3 methods (‘getTopAppsByHost’, ‘addAppToHosts’ and ’removeAppFromHosts’). By then, I thought that would be more organised to introduce navigation and have different urls:
  
-  './'  => for the Home where you can see the 3 forms and the link for ‘‘See list by Host’ lists
+  './'  => for the Home where you can see the 3 forms and the link for ‘‘See list by Host’ 
   
-  '/apps-by-host'  => for the ‘See list by Host’ lists
+  '/apps-by-host'  => for the ‘See list by Host’ view
   
-  '/top-apps-by-host/:id' => for the ‘Top Apps By Host’ list 
+  '/top-apps-by-host/:id' => for the ‘Top Apps By Host’ view
   
 I also thought that would be more organised to use Redux and have the information related with the apps and toast always saved in one place (single source of truth). 
 
-  5. Once we don’t have a data source connection, if you refresh the page on '/apps-by-hostt' or '/top-apps-by-host/:id' , you will be redirect to home. I thought it would be more organised that way.
+  5. Once we don’t have a data source connection, if you refresh the page on '/apps-by-host' or '/top-apps-by-host/:id' , you will be redirect to home. I thought it would be more organised that way.
 I also decided to not use SAGAS and Request Success Failure Pattern for the same reasion (no data source connection what means no asynchronous call).
 
   6. I used a library called 'react-toastify' for a better design of the alert dialog and also to communicate with the user if the actions (add or remove app) were well succeed.
   
-  7. I used 'jest' and 'enzyme' for unit testing. Also added prop-type errors package to check any problem related with the props for every component. 
+  7. I used 'jest' and 'enzyme' for unit testing. Also added prop-type errors package to check any problem related with the props of every component. 
   
   8. To check the browser support for the latest 2 versions of major browsers I installed  'browserslist' and add the "last 2 xxxx version" for every browser.
   
