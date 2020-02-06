@@ -13,6 +13,7 @@ const Home = ({ onSaveInitialData, hasInitialData }) => {
 
   useEffect(() => {
     if (!hasInitialData && data) onSaveInitialData({ data });
+    // eslint-disable-next-line
   }, [data]);
 
   if (isLoading || !data) {

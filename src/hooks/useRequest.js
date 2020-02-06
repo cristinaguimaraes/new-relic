@@ -14,7 +14,7 @@ const useRequest = fn => {
       }
     } catch (e) {
       if (isSubscribed) {
-        setError(error);
+        setError(e);
       }
       setError(e);
     } finally {
