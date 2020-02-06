@@ -38,5 +38,6 @@ exports[`Home styled components Link should render properly 1`] = `
 
 <Link
   className="c0"
+  to="/apps-by-host"
 />
 `;

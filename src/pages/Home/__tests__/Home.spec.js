@@ -5,7 +5,7 @@ import React from "react";
 describe("Home component", () => {
   test("should render properly", () => {
     expect(
-      shallow(<Home onSaveInitialData={() => {}}>Test</Home>)
+      shallow(<Home hasInitialData={false} onSaveInitialData={() => {}}>Test</Home>)
     ).toMatchSnapshot();
   });
 });

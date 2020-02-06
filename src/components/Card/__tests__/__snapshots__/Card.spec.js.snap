@@ -6,21 +6,21 @@ exports[`Card component should render properly 1`] = `
   layout="list"
 >
   <styled.div>
-
+     
     7e6272f7-098e.dakota.biz
-
+     
   </styled.div>
   <styled.div
     key="0"
     onClick={[Function]}
   >
     <styled.div>
-
+       
       100
-
+       
     </styled.div>
     <styled.div>
-
+       
       Awesome Wooden Sausages - Schaefer - Hegmann Inc
     </styled.div>
   </styled.div>

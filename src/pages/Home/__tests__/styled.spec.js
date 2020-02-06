@@ -9,6 +9,6 @@ describe("Home styled components", () => {
   });
 
   test("Link should render properly", () => {
-    expect(shallow(<Link />)).toMatchSnapshot();
+    expect(shallow(<Link to={"/apps-by-host"}/>)).toMatchSnapshot();
   });
 });
