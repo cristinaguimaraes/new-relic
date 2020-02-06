@@ -75,7 +75,7 @@ I also decided to not use SAGAS and Request Success Failure Pattern for the same
   
   7. I used 'jest' and 'enzyme' for unit testing. Also added prop-type errors package to check any problem related with the props of every component. 
   
-  8. To check the browser support for the latest 2 versions of major browsers I installed  'browserslist' and added the "last 2 xxxx version" for every browser.
+  8. To check the browser support for the latest 2 versions of major browsers I installed  'browserslist' and added the "last 2 xxxx version" for the four browsers of the list.
   
   9. To format the on code I used 'prettier'. The file to define the rules of code formatting is .prettierrc
   
