@@ -1,3 +1,65 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AddAppForm component should render properly 1`] = `ShallowWrapper {}`;
+exports[`AddAppForm component should render properly 1`] = `
+<styled.form
+  onSubmit={[Function]}
+>
+  <styled.div>
+    Add App
+  </styled.div>
+  <styled.label>
+    App Name:
+  </styled.label>
+  <styled.input
+    name="name"
+    onChange={[Function]}
+    type="text"
+    value=""
+  />
+  <styled.label>
+    Contributors:
+  </styled.label>
+  <styled.input
+    name="contributors"
+    onChange={[Function]}
+    placeholder="Write the contributor's names separate by comma"
+    type="text"
+    value=""
+  />
+  <styled.label>
+    Apdex:
+  </styled.label>
+  <styled.input
+    name="apdex"
+    onChange={[Function]}
+    type="number"
+    value=""
+  />
+  <styled.label>
+    Version:
+  </styled.label>
+  <styled.input
+    name="version"
+    onChange={[Function]}
+    type="number"
+    value=""
+  />
+  <styled.label>
+    Hosts:
+  </styled.label>
+  <styled.input
+    name="host"
+    onChange={[Function]}
+    placeholder="Write the host's names separate by comma"
+    type="text"
+    value=""
+  />
+  <styled.div>
+    <styled.button
+      type="submit"
+    >
+      Add
+    </styled.button>
+  </styled.div>
+</styled.form>
+`;

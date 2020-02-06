@@ -1,3 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Routes component should render properly 1`] = `ShallowWrapper {}`;
+exports[`Routes component should render properly 1`] = `
+<BrowserRouter>
+  <Switch>
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/"
+    />
+    <Route
+      component={[Function]}
+      path="/apps-by-host"
+    />
+    <Route
+      component={[Function]}
+      path="/top-apps-by-host/:id"
+    />
+  </Switch>
+</BrowserRouter>
+`;

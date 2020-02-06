@@ -1,15 +1,116 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AppsByHostHeader2 styled components Button should render properly 1`] = `ShallowWrapper {}`;
+exports[`AppsByHostHeader2 styled components Button should render properly 1`] = `
+.c0 {
+  width: 80px;
+  margin-top: 15px;
+  border-radius: 6px;
+  height: 40px;
+  font-family: inherit;
+  font-size: 16px;
+}
 
-exports[`AppsByHostHeader2 styled components ButtonWrapper should render properly 1`] = `ShallowWrapper {}`;
+<button
+  className="c0"
+/>
+`;
 
-exports[`AppsByHostHeader2 styled components Form should render properly 1`] = `ShallowWrapper {}`;
+exports[`AppsByHostHeader2 styled components ButtonWrapper should render properly 1`] = `
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
 
-exports[`AppsByHostHeader2 styled components Helper should render properly 1`] = `ShallowWrapper {}`;
+<div
+  className="c0"
+/>
+`;
 
-exports[`AppsByHostHeader2 styled components Input should render properly 1`] = `ShallowWrapper {}`;
+exports[`AppsByHostHeader2 styled components Form should render properly 1`] = `
+.c0 {
+  width: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 24px 16px;
+  border-radius: 4px;
+  margin-top: 24px;
+  border: solid 1px;
+}
 
-exports[`AppsByHostHeader2 styled components Label should render properly 1`] = `ShallowWrapper {}`;
+<form
+  className="c0"
+/>
+`;
 
-exports[`AppsByHostHeader2 styled components Title should render properly 1`] = `ShallowWrapper {}`;
+exports[`AppsByHostHeader2 styled components Helper should render properly 1`] = `
+.c0 {
+  display: block;
+  color: red;
+  margin-top: 4px;
+  font-family: "Helvetica Bold";
+}
+
+.c0:first-letter {
+  text-transform: capitalize;
+}
+
+<span
+  className="c0"
+/>
+`;
+
+exports[`AppsByHostHeader2 styled components Input should render properly 1`] = `
+.c0 {
+  font-family: "Helvetica";
+  height: 20px;
+  min-height: 20px;
+  font-size: 16px;
+  padding: 10px;
+}
+
+<input
+  className="c0"
+/>
+`;
+
+exports[`AppsByHostHeader2 styled components Label should render properly 1`] = `
+.c0 {
+  font-family: "Helvetica Bold";
+  margin-bottom: 5px;
+}
+
+.c0:first-letter {
+  text-transform: capitalize;
+}
+
+<label
+  className="c0"
+/>
+`;
+
+exports[`AppsByHostHeader2 styled components Title should render properly 1`] = `
+.c0 {
+  font-size: 35px;
+  font-family: "Helvetica Bold";
+  color: #000000;
+  line-height: 43px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+<div
+  className="c0"
+/>
+`;

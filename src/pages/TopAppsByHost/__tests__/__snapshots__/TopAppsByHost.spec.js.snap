@@ -1,3 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TopAppsByHost component should render properly 1`] = `ShallowWrapper {}`;
+exports[`TopAppsByHost component should render properly 1`] = `
+<styled.div>
+  <styled.div>
+    Sorry, this host is not in the list!
+  </styled.div>
+</styled.div>
+`;

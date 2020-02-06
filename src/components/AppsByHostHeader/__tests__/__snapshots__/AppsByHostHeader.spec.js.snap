@@ -1,3 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AppsByHostHeader2 component should render properly 1`] = `ShallowWrapper {}`;
+exports[`AppsByHostHeader2 component should render properly 1`] = `
+<styled.div>
+  <styled.div>
+    Apps by Host
+  </styled.div>
+  <styled.div>
+    for user averylongemailaddress@companyname.com
+  </styled.div>
+  <styled.i
+    className="material-icons"
+    onClick={[Function]}
+  >
+    check_box_outline_blank
+  </styled.i>
+  <styled.div>
+    Show as 
+    list
+  </styled.div>
+</styled.div>
+`;

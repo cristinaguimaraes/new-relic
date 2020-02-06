@@ -1,3 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`RemoveAppForm component should render properly 1`] = `ShallowWrapper {}`;
+exports[`RemoveAppForm component should render properly 1`] = `
+<styled.form
+  onSubmit={[Function]}
+>
+  <styled.div>
+    Remove App
+  </styled.div>
+  <styled.label>
+    App Name:
+  </styled.label>
+  <styled.input
+    name="name"
+    onChange={[Function]}
+    type="text"
+    value=""
+  />
+  <styled.div>
+    <styled.button
+      type="submit"
+    >
+      Remove
+    </styled.button>
+  </styled.div>
+</styled.form>
+`;

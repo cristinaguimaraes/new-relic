@@ -1,9 +1,9 @@
-import React, {useEffect} from "react";
-import {bool, func, oneOf, string} from "prop-types";
-import {cssTransition, toast, ToastContainer} from "react-toastify";
+import React, { useEffect } from "react";
+import { bool, func, oneOf, string } from "prop-types";
+import { cssTransition, toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./toast.css";
-import {TextWrapper, Text} from "./styled";
+import { TextWrapper, Text } from "./styled";
 
 const Fade = cssTransition({
   enter: "custom-fadeInDown",
@@ -11,15 +11,16 @@ const Fade = cssTransition({
   duration: 500
 });
 
-const Toast = ({showToast, messageKey, onClose, type}) => {
+const Toast = ({ showToast, messageKey, onClose, type }) => {
   useEffect(() => {
     if (showToast) {
-      toast(<Message/>, {
+      toast(<Message />, {
         onClose,
         className: "custom-background",
         containerId: "custom-toast-container"
       });
     }
+    // eslint-disable-next-line
   }, [showToast]);
 
   const Message = () => (
@@ -49,7 +50,7 @@ Toast.propTypes = {
   showToast: bool,
   messageKey: string,
   onClose: func,
-  type: oneOf(['success', 'failure'])
+  type: oneOf(["success", "failure"])
 };
 
-export {Toast};
+export { Toast };

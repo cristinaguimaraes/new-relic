@@ -42,7 +42,7 @@ AppsByHost.propTypes = {
         version: number.isRequired
       })
     )
-  })
+  }).isRequired
 };
 
 export { AppsByHost };

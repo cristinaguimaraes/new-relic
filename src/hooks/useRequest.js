@@ -6,14 +6,23 @@ const useRequest = fn => {
   const [data, setData] = useState();
 
   useEffect(() => {
+    let isSubscribed = true;
     try {
       const { data } = fn();
-      setData(data);
+      if (isSubscribed) {
+        setData(data);
+      }
     } catch (e) {
+      if (isSubscribed) {
+        setError(e);
+      }
       setError(e);
     } finally {
-      setLoading(false);
+      if (isSubscribed) {
+        setLoading(false);
+      }
     }
+    return () => (isSubscribed = false);
   }, [fn]);
 
   return { isLoading, error, data };

@@ -1,5 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home styled components Cards should render properly 1`] = `ShallowWrapper {}`;
+exports[`Home styled components Cards should render properly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 840px;
+}
 
-exports[`Home styled components Content should render properly 1`] = `ShallowWrapper {}`;
+<div
+  className="c0"
+/>
+`;
+
+exports[`Home styled components Content should render properly 1`] = `
+.c0 {
+  width: 840px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 30px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #f8f8f8;
+}
+
+<div
+  className="c0"
+/>
+`;

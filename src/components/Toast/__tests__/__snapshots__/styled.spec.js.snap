@@ -1,5 +1,78 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Toast styled components Text should render properly 1`] = `ShallowWrapper {}`;
+exports[`Toast styled components Text should render properly 1`] = `
+.c0 {
+  margin-left: 8px;
+}
 
-exports[`Toast styled components TextWrapper should render properly 1`] = `ShallowWrapper {}`;
+<span
+  className="c0"
+/>
+`;
+
+exports[`Toast styled components TextWrapper should render properly 1`] = `
+.c0 {
+  width: 50%;
+  box-shadow: 0 2px 12px 4px rgba(0,0,0,0.19);
+  border-radius: 6px !important;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: green;
+  color: white;
+}
+
+<styled.div>
+  <div
+    className="c0"
+  />
+</styled.div>
+`;
+
+exports[`Toast styled components TextWrapper should render properly 2`] = `
+.c0 {
+  width: 50%;
+  box-shadow: 0 2px 12px 4px rgba(0,0,0,0.19);
+  border-radius: 6px !important;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: red;
+  color: white;
+}
+
+<styled.div
+  type="failure"
+>
+  <div
+    className="c0"
+    type="failure"
+  />
+</styled.div>
+`;

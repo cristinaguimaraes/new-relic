@@ -11,7 +11,7 @@ class DefaultErrorBoundary extends React.Component {
   }
 
   static propTypes = {
-    children: node.isRequired
+    children: node
   };
 
   render() {

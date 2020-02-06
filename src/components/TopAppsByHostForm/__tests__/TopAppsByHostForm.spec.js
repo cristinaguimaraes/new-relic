@@ -1,5 +1,5 @@
-import {TopAppsByHostForm} from "../TopAppsByHostForm";
-import {shallow} from "enzyme";
+import { TopAppsByHostForm } from "../TopAppsByHostForm";
+import { shallow } from "enzyme";
 import React from "react";
 
 describe("TopAppsByHostForm component", () => {
@@ -7,8 +7,12 @@ describe("TopAppsByHostForm component", () => {
     const fn = () => {};
     expect(
       shallow(
-        <TopAppsByHostForm history={{push: fn}} onShowToastMessage={fn} onDeleteApp={fn}/>
+        <TopAppsByHostForm
+          history={{ push: fn }}
+          onShowToastMessage={fn}
+          onDeleteApp={fn}
+        />
       )
-    ).toMatchSnapshot()
+    ).toMatchSnapshot();
   });
 });
