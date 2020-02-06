@@ -8,7 +8,7 @@ const TopAppsByHost = ({ data }) => {
   const [, , id] = window.location.pathname.split("/");
 
   if (!data || Object.keys(data).length === 0) return <Redirect to="/" />;
-  console.log(data);
+
   return (
     <Content>
       {data[id] ? (
@@ -33,7 +33,7 @@ TopAppsByHost.propTypes = {
         version: number.isRequired
       })
     )
-  })
+  }).isRequired
 };
 
 export { TopAppsByHost };

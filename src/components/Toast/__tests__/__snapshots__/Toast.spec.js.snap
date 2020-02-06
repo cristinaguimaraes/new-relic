@@ -1,5 +1,53 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Toast component should render properly 1`] = `ShallowWrapper {}`;
+exports[`Toast component should render properly 1`] = `
+<ToastContainer
+  autoClose={2500}
+  bodyClassName={null}
+  className={null}
+  closeButton={false}
+  closeOnClick={true}
+  containerId="custom-toast-container"
+  draggable={true}
+  draggablePercent={80}
+  hideProgressBar={true}
+  newestOnTop={true}
+  pauseOnFocusLoss={true}
+  pauseOnHover={false}
+  position="top-right"
+  progressClassName={null}
+  progressStyle={null}
+  role="alert"
+  rtl={false}
+  style={null}
+  toastClassName={null}
+  transition={[Function]}
+  type="success"
+/>
+`;
 
-exports[`Toast component should render properly 2`] = `ShallowWrapper {}`;
+exports[`Toast component should render properly 2`] = `
+<ToastContainer
+  autoClose={2500}
+  bodyClassName={null}
+  className={null}
+  closeButton={false}
+  closeOnClick={true}
+  containerId="custom-toast-container"
+  draggable={true}
+  draggablePercent={80}
+  hideProgressBar={true}
+  newestOnTop={true}
+  pauseOnFocusLoss={true}
+  pauseOnHover={false}
+  position="top-right"
+  progressClassName={null}
+  progressStyle={null}
+  role="alert"
+  rtl={false}
+  style={null}
+  toastClassName={null}
+  transition={[Function]}
+  type="success"
+/>
+`;

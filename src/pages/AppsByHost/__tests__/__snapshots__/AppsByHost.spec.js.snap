@@ -1,3 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AppsByHost component should render properly 1`] = `ShallowWrapper {}`;
+exports[`AppsByHost component should render properly 1`] = `
+<styled.div>
+  <AppsByHostHeader
+    layout="list"
+    onClick={[Function]}
+  />
+  <styled.div>
+    <withRouter(Connect(Card))
+      apps={
+        Array [
+          Object {
+            "apdex": 68,
+            "contributors": Array [
+              "Edwin Reinger",
+              "Ofelia Dickens",
+            ],
+            "name": "Small Fresh Pants - Kautzer - Boyer, and Sons",
+            "version": 7,
+          },
+        ]
+      }
+      host="92116865-5462.conor.com"
+      index={0}
+      key="host-92116865-5462.conor.com"
+      layout="list"
+    />
+  </styled.div>
+</styled.div>
+`;
