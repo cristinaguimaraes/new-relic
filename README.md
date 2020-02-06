@@ -27,9 +27,9 @@ npm t
 
 
 # Project structure
-The project has a main folder on the root path where the code is, src folder. At the same level, there are the different configuration files for tools such as husky and prettier.
+The project has a main folder on the root path where the code is (src folder). At the same level, there are the different configuration files for tools such as husky and prettier.
 
-## Source code (folders from src folder):
+## Source code (folders from src code):
 
 api: folder where the app read the provided JSON file.
 
