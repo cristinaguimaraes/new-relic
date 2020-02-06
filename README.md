@@ -58,7 +58,7 @@ setupTests.js: configuration file for the tests.
  
  3. I used Styled Components to style the components because on my opinion is also more organised and easier to read. Based on this decision I created a Global Style to share the font-family with all the components of the app.
 
- 4. My first approach was to not use Redux or Route, keep all the information in just one url where the main component was holding the state. But after a while I decided to also build the UI for the 3 methods (‘getTopAppsByHost’, ‘addAppToHosts’ and ’removeAppFromHosts’).By then, I thought that would be more organised to introduce navigation and have different urls:
+ 4. My first approach was to not use Redux or Route, keeping all the information in just one url where the main component was holding the state. But after a while, I decided to also build the UI for the 3 methods (‘getTopAppsByHost’, ‘addAppToHosts’ and ’removeAppFromHosts’).By then, I thought that would be more organised to introduce navigation and have different urls:
   *) ./  => for the Home where you can see the 3 forms and the link for ‘‘See list by Host’ lists
   *) /apps-by-host  => for the ‘See list by Host’ lists
   *) /top-apps-by-host/:id => for the ‘Top Apps By Host’ list 
