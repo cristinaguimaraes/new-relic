@@ -9,8 +9,8 @@ const Routes = () => (
   <BrowserRouter>
     <Switch>
       <Route exact path="/" component={Home} />
-      <Route path="/AppsByHost" component={AppsByHost} />
-      <Route path="/TopAppsByHost/:id" component={TopAppsByHost} />
+      <Route path="/apps-by-host" component={AppsByHost} />
+      <Route path="/top-apps-by-host/:id" component={TopAppsByHost} />
     </Switch>
   </BrowserRouter>
 );
