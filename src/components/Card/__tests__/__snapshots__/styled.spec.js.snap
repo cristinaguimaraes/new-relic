@@ -7,3 +7,5 @@ exports[`Card styled components App should render properly 1`] = `ShallowWrapper
 exports[`Card styled components Host should render properly 1`] = `ShallowWrapper {}`;
 
 exports[`Card styled components Name should render properly 1`] = `ShallowWrapper {}`;
+
+exports[`Card styled components should apply styles according to passed props 1`] = `ShallowWrapper {}`;
