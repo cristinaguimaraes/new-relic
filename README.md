@@ -26,20 +26,23 @@ npm install
 npm start
 ```
 
+
 # Running Tests
 
 ```
 npm t
 ```
 
+
 # Tech stack
 
 ### Built with
 - React, Redux, Styled Components
 
+
 # Source code
 
-## Within src code there are different folders:
+### Within src code there are different folders:
 
 api: folder where the app read the provided JSON file.
 
