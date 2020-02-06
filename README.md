@@ -41,13 +41,21 @@ npm t
 Within src code there are different folders:
 
 api: folder where the app read the provided JSON file.
+
 assets: folder to store the static resource (font-face: HelveticaNeue and HelveticaNeue-Bold).
+
 components: folder where there are the React components
+
 hooks: folder to store the custom hook
+
 pages: folder where there are the pages as if were paths.
+
 redux: folder to store all redux code related (actions, reducers and store).
+
 styles: folder where there are the project related css style.
+
 index.jsx: is the entry point of the project, the main file.
+
 
 # Considerations about the Project
 
