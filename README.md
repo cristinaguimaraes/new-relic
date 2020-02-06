@@ -39,13 +39,15 @@ components: folder where there are the React components.
 
 hooks: folder to store the custom hook (useRequest).
 
-pages: folder where there are the pages as if were paths.
+pages: folder containing the pages as if were paths.
 
 redux: folder to store all redux code related (actions, reducers and store).
 
-styles: folder where there are the project related css style.
+styles: folder containing the project related css style (Global Style).
 
-index.jsx: is the entry point of the project, the main file.
+index.jsx: the entry point of the project, the main file.
+
+setupTests.js: configuration file for the tests.
 
 
 # Considerations about the Project
