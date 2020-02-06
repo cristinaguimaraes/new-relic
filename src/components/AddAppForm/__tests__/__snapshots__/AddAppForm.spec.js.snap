@@ -22,7 +22,7 @@ exports[`AddAppForm component should render properly 1`] = `
   <styled.input
     name="contributors"
     onChange={[Function]}
-    placeholder="Write the contributor's names separate by comma"
+    placeholder="Write the contributors names separate by comma"
     type="text"
     value=""
   />
@@ -50,7 +50,7 @@ exports[`AddAppForm component should render properly 1`] = `
   <styled.input
     name="host"
     onChange={[Function]}
-    placeholder="Write the host's names separate by comma"
+    placeholder="Write the hosts names separate by comma"
     type="text"
     value=""
   />

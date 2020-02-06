@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import {createGlobalStyle} from "styled-components";
 import HelveticaNeueBold from "assets/fonts/HelveticaNeueBold.ttf";
 import HelveticaNeue from "assets/fonts/HelveticaNeue.ttf";
 
@@ -12,5 +12,8 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Helvetica';
     src: local('Helvetica'), url(${HelveticaNeue.ttf}) format('opentype');
   }
-
+  
+   body {
+    font-family:'Helvetica';
+  }
 `;
