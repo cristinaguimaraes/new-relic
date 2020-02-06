@@ -35,9 +35,9 @@ api: folder where the app read the provided JSON file.
 
 assets: folder to store the static resource (font-face: HelveticaNeue and HelveticaNeue-Bold).
 
-components: folder where there are the React components
+components: folder where there are the React components.
 
-hooks: folder to store the custom hook
+hooks: folder to store the custom hook (useRequest).
 
 pages: folder where there are the pages as if were paths.
 
