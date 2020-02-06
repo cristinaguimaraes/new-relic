@@ -1,8 +1,7 @@
 # new-relic
 
-# Running the Project
 
-## Steps
+# Running the Project
   
 ## 1. Clone the Repo
 Clone the `new-relic code` locally. In a terminal, run:
