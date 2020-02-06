@@ -2,4 +2,4 @@
 
 exports[`Toast styled components Text should render properly 1`] = `ShallowWrapper {}`;
 
-exports[`Toast styled components TextWrapper should render properly 1`] = `ShallowWrapper {}`;
+exports[`Toast styled components TextWrapper should render properly 1`] = `ReactWrapper {}`;

@@ -4,6 +4,6 @@ import React from "react";
 
 describe("TopAppsByHost component", () => {
   test("should render properly", () => {
-    expect(shallow(<TopAppsByHost>Test</TopAppsByHost>)).toMatchSnapshot();
+    expect(shallow(<TopAppsByHost />)).toMatchSnapshot();
   });
 });

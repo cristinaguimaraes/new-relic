@@ -1,6 +1,5 @@
 import React from "react";
 import { shallow, mount } from "enzyme";
-
 import { Apdex, Wrapper, Name, App, Host } from "../styled";
 
 describe("Card styled components", () => {

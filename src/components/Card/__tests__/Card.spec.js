@@ -7,14 +7,15 @@ describe("Card component", () => {
     expect(
       shallow(
         <Card
-          onShowToastMessage={jest.fn()}
+          onShowToastMessage={() => {}}
           index={1}
           layout={"list"}
           host={"7e6272f7-098e.dakota.biz"}
           apps={[
             {
               name: "Awesome Wooden Sausages - Schaefer - Hegmann Inc",
-              apdex: 100
+              apdex: 100,
+              version: 2
             }
           ]}
         >

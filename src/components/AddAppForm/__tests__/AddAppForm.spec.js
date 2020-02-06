@@ -6,7 +6,7 @@ describe("AddAppForm component", () => {
   test("should render properly", () => {
     expect(
       shallow(
-        <AddAppForm onAddApp={jest.fn()} onShowToastMessage={jest.fn()}>
+        <AddAppForm onAddApp={() => {}} onShowToastMessage={() => {}}>
           Test
         </AddAppForm>
       )

@@ -6,7 +6,7 @@ describe("AppsByHostHeader2 component", () => {
   test("should render properly", () => {
     expect(
       shallow(
-        <AppsByHostHeader layout={"list"} onClick={jest.fn()}>
+        <AppsByHostHeader layout={"list"} onClick={() => {}}>
           Test
         </AppsByHostHeader>
       )
