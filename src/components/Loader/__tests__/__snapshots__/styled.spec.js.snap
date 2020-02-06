@@ -1,5 +1,59 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Loader styled components Spinner should render properly 1`] = `ShallowWrapper {}`;
+exports[`Loader styled components Spinner should render properly 1`] = `
+.c0 {
+  opacity: 1;
+  position: relative;
+  -webkit-transition: opacity linear 0.1s;
+  transition: opacity linear 0.1s;
+  -webkit-animation: xLFRF 2s ease-in-out 0s infinite;
+  animation: xLFRF 2s ease-in-out 0s infinite;
+}
 
-exports[`Loader styled components Wrapper should render properly 1`] = `ShallowWrapper {}`;
+.c0::before {
+  border: solid 3px #eee;
+  border-bottom-color: red;
+  border-radius: 50%;
+  content: "";
+  height: 40px;
+  left: 50%;
+  opacity: inherit;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  -ms-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  width: 40px;
+  will-change: transform;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Loader styled components Wrapper should render properly 1`] = `
+.c0 {
+  padding-top: 50px;
+  height: 200px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<div
+  className="c0"
+/>
+`;
