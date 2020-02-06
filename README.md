@@ -52,13 +52,13 @@ setupTests.js: configuration file for the tests.
 
 # Considerations about the Project
 
- 1. I used React as the framework because is the one that I feel more confortable to work with, I have been using it for the last two years.
+ 1. I used React as the framework because it is the one that I feel more confortable to work with, I have been using it for the last two years.
  
  2. I used functions and not classes to build the React components because on my opinion it generates less code that is more organised and easier to read. Based on this decision, I used hooks (useState, useEffect, useRequest) instead of lifecycle methods.
  
- 3. I used Styled Components to style the components because on my opinion is also more organised and easier to read. Based on this decision I created a Global Style to share the font-family with all the components of the app.
+ 3. I used Styled Components to style the components because in my opinion is also more organised and easier to read. Based on this decision I created a Global Style to share the font-family with all the components of the app.
 
- 4. My first approach was to not use Redux or Route, keeping all the information in just one url where the main component was holding the state. But after a while, I decided to also build the UI for the 3 methods (‘getTopAppsByHost’, ‘addAppToHosts’ and ’removeAppFromHosts’). By then, I thought that would be more organised to introduce navigation and have different urls:
+ 4. My first approach was to not use Redux or Route, keeping all the information in just one url where the main component was holding the state. But after a while, I decided to also build the UI for the 3 methods (‘getTopAppsByHost’, ‘addAppToHosts’ and ’removeAppFromHosts’). By then, I thought that it would be more organised to introduce navigation and have different urls:
  
   './'  => for the Home where you can see the 3 forms and the link for ‘‘See list by Host’ 
   
@@ -66,20 +66,20 @@ setupTests.js: configuration file for the tests.
   
   '/top-apps-by-host/:id' => for the ‘Top Apps By Host’ view
   
-I also thought that would be more organised to use Redux and have the information related with the apps and toast always saved in one place (single source of truth). 
+I also thought that it would be more organised to use Redux and have the information related with the apps and toast always saved in one place (single source of truth). 
 
-  5. Once we don’t have a data source connection, if you refresh the page on '/apps-by-host' or '/top-apps-by-host/:id' , you will be redirect to home. I thought it would be more organised that way.
+  5. Once we don’t have a data source connection, if you refresh the page on '/apps-by-host' or '/top-apps-by-host/:id' , you will be redirected to '/'. I thought it would be more organised that way.
 I also decided to not use SAGAS and Request Success Failure Pattern for the same reasion (no data source connection what means no asynchronous call).
 
-  6. I used a library called 'react-toastify' for a better design of the alert dialog and also to communicate with the user if the actions (add or remove app) were well succeed.
+  6. I used a library called 'react-toastify' for a better design of the alert dialog and also to communicate with the user if the actions (add or remove app) were well succeeded.
   
-  7. I used 'jest' and 'enzyme' for unit testing. Also added prop-type errors package to check any problem related with the props of every component. 
+  7. I used 'jest' and 'enzyme' for unit testing. Also added 'jest-prop-type-error' package to check the prop types of every component. 
   
-  8. To check the browser support for the latest 2 versions of major browsers I installed  'browserslist' and added the "last 2 xxxx version" for the four browsers of the list.
+  8. To check the browser support for the latest 2 versions of major browsers I installed 'browserslist' and added the "last 2 xxxx version" option for each browser.
   
   9. .prettierrc is the file to define the rules of code formatting from the 'prettier' package.
   
-  10. .huskyrc is the file to configure the pre-commit hook. Also code formatting using 'husky' package. 
+  10. .huskyrc is the file to configure the pre-commit hook for code formatting. 
   
   
   
