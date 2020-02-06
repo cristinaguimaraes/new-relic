@@ -1,6 +1,6 @@
 # new-relic
 
-# Running the Frontend
+# Running the Project
 
 ## Steps
   
@@ -9,15 +9,17 @@ Clone the `new-relic code` locally. In a terminal, run:
   `git clone https://github.com/cristinaguimaraes/new-relic.git`
   
 ## 2. Create the .env file 
-Create the .env file copying the .env.example file 
+Copy the .env.example file to .env file 
     
-## 3. Run the project
+## 3. Install dependencies
 In the terminal, run:
 ```
 npm install
+```
+## 4. Run locally
+```
 npm start
 ```
-
 
 # Running Tests
 ```
