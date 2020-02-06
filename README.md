@@ -77,9 +77,9 @@ I also decided to not use SAGAS and Request Success Failure Pattern for the same
   
   8. To check the browser support for the latest 2 versions of major browsers I installed  'browserslist' and added the "last 2 xxxx version" for the four browsers of the list.
   
-  9. To format the on code I used 'prettier'. The file to define the rules of code formatting is .prettierrc
+  9. .prettierrc is the file to define the rules of code formatting from the 'prettier' package.
   
-  10. To format the code on pre-commit, I used 'pretty-quick'  and 'husky'. Configuration on .huskyrc file
+  10. .huskyrc is the file to configure the pre-commit hook. Also code formatting using 'husky' package. 
   
   
   
