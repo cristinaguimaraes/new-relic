@@ -52,7 +52,7 @@ setupTests.js: configuration file for the tests.
 
 # Considerations about the Project
 
- 1. I used React as the framework because is the one that I feel more confort once I have been working with it for the last two years.
+ 1. I used React as the framework because is the one that I feel more confortable to work with, I have been using it for the last two years.
  
  2. I used functions and not classes to build the React components because on my opinion it generate less code that is more organised and easier to read. Based on this decision, I used hooks (useState, useEffect, useRequest) instead of lifecycle methods.
  
