@@ -39,7 +39,7 @@ components: folder where there are the React components.
 
 hooks: folder to store the custom hook (useRequest).
 
-pages: folder containing the pages as if were paths.
+pages: folder containing the pages (each page is one path).
 
 redux: folder to store all redux code related (actions, reducers and store).
 
