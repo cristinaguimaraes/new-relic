@@ -66,7 +66,7 @@ setupTests.js: configuration file for the tests.
 
  4. My first approach was to not use Redux or Route, keeping all the information in just one url where the main component was holding the state. But after a while, I decided to also build the UI for the 3 methods (‘getTopAppsByHost’, ‘addAppToHosts’ and ’removeAppFromHosts’). By then, I thought that it would be more organised to introduce navigation and have different urls:
  
-      './'  => for the Home where you can see the 3 forms and the link for ‘‘See list by Host’ 
+      './'  => for the home view, where you can see the 3 forms and the link for ‘‘See list by Host’ 
   
       '/apps-by-host'  => for the ‘See list by Host’ view
   
