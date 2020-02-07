@@ -1,6 +1,16 @@
 
 # dependencies
 node_modules
+/.pnp
+.pnp.js
 
 # environment
+.DS_Store
 .env
+
+# testing
+/coverage
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
