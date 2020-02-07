@@ -51,7 +51,7 @@ setupTests.js: configuration file for the tests.
 
 ## Configuration files:
 
-.huskyrc: file that configure the pre-commit and pre-push hooks. 
+.huskyrc: file that configures the pre-commit and pre-push hooks. 
 
 .prettierrc: file that defines the rules of code formatting.
 
