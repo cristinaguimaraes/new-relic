@@ -26,7 +26,7 @@ const Home = ({ onSaveInitialData, hasInitialData }) => {
 
   return (
     <Content>
-      <Link to={"/apps-by-host"}>See List of Apps By Host</Link>
+      <Link to={"/apps-by-host-lala"}>See List of Apps By Host</Link>
       <TopAppsByHostForm />
       <AddAppForm />
       <RemoveAppForm />
