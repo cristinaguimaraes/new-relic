@@ -49,6 +49,12 @@ index.jsx: the entry point of the project, the main file.
 
 setupTests.js: configuration file for the tests.
 
+## Configuration files:
+
+.huskyrc: file that configure the pre-commit and pre-push hooks. 
+
+.prettierrc: file that defines the rules of code formatting.
+
 
 # Considerations about the Project
 
@@ -76,10 +82,6 @@ I also decided to not use SAGAS and Request Success Failure Pattern for the same
   7. I used 'jest' and 'enzyme' for unit testing. Also added 'jest-prop-type-error' package to check the prop types of every component. 
   
   8. To check the browser support for the latest 2 versions of major browsers I installed 'browserslist' and added the "last 2 xxxx version" option for each browser.
-  
-  9. .prettierrc is the file to define the rules of code formatting from the 'prettier' package.
-  
-  10. .huskyrc is the file to configure the pre-commit hook for code formatting. 
   
   
   
